@@ -5,7 +5,7 @@ import {
   timeSince,
 } from "./index";
 import { YOUTUBE_API_URL } from "./constants";
-import { Item, RecomendedVideos } from "../Types";
+import { Item, RecommendedVideos } from "../Types";
 
 const API_KEY = import.meta.env.VITE_YOUTUBE_DATA_API_KEY;
 
@@ -30,7 +30,7 @@ export const parseRecommendedData = async (items: Item[], videoId: string) => {
       )}&key=${API_KEY}`
     );
 
-    const parsedData: RecomendedVideos[] = [];
+    const parsedData: RecommendedVideos[] = [];
     newItems.forEach((item, index) => {
       if (index >= videosData.length) return;
       if (videoId === item?.contentDetails?.upload?.videoId) return;
