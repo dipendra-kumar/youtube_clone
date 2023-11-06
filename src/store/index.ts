@@ -1,4 +1,4 @@
-import { createSlice, configureStore, PayloadAction } from "@reduxjs/toolkit";
+import { configureStore } from "@reduxjs/toolkit";
 import { youtubeSlice } from "./reducers";
 
 export const store = configureStore({

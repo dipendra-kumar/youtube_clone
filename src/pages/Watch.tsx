@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { BiLike, BiDislike } from "react-icons/bi";
 import { HiScissors } from "react-icons/hi";
 import { MdOutlinePlaylistAdd } from "react-icons/md";
